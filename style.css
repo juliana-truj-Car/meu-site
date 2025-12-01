@@ -1,0 +1,69 @@
+ body {
+    background-color: rgba(192, 189, 189, 0.959);
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+
+.menu-botoes {
+    margin-top: 30px; 
+}
+
+a {
+    text-decoration: none;
+    color: white; 
+    background-color: #333; 
+    padding: 15px 25px; 
+    border-radius: 8px; 
+    margin: 0 10px; 
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+
+a:hover {
+    background-color: #000; 
+    transform: scale(1.05); 
+}
+   
+/* Container das imagens */
+.galeria {
+    display: flex;              /* Ativa o modo flexível */
+    justify-content: center;    /* Centraliza o grupo de imagens na tela */
+    gap: 20px;                  /* CRUCIAL: Adiciona o espaçamento entre as imagens */
+    flex-wrap: wrap;            /* Se não couber na tela, joga para a linha de baixo */
+    margin-top: 20px;           /* Um espaço acima das fotos */
+}
+
+/* Estilo para cada imagem individualmente */
+.galeria img {
+    width: 400px;               /* Define uma largura fixa para ficarem iguais */
+    height: 350px;              /* Define uma altura fixa */
+    object-fit: cover;          /* Corta a imagem para caber no quadrado sem esticar/deformar */
+    border-radius: 10px;        /* Bordas arredondadas (opcional, mas fica bonito) */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra suave (opcional) */
+    transition: transform 0.3s; /* Animação suave */
+}
+
+/* Efeito ao passar o mouse na foto (opcional) */
+.galeria img:hover {
+    transform: scale(1.1);      /* Aumenta a foto levemente */
+}
